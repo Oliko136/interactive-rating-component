@@ -1,3 +1,39 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey-950: #131518;
+    --grey-900: #262E38;
+    --grey-500: #969FAD;
+    --orange: #FC7614;
+    --gradient: linear-gradient(90deg, #232A34 0%, #181E27 100%);
+    --font-family: 'Overpass', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-size-title-desktop: 1.75rem;
+    --font-size-title-mobile: 1.5rem;
+    --font-size-rating-desktop: 1rem;
+    --font-size-rating-mobile: 0.875rem;
+    --font-size-text-desktop: 0.9375rem;
+    --font-size-text-mobile: 0.875rem;
+    --font-size-button: 0.875rem;
+    --line-height-title-desktop: 2.1875rem;
+    --line-height-title-mobile: 1.875rem;
+    --line-height-interactive-desktop: 1.5rem;
+    --line-height-interactive-mobile: 1.125rem;
+    --line-height-text-desktop: 1.5rem;
+    --line-height-text-mobile: 1.375rem;
+    --letter-spacing-rating-desktop: 0.0125rem;
+    --letter-spacing-button-desktop: 0.01063rem;
+    --letter-spacing-interactive-mobile: 0.11688rem;
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-1300: 6.5rem;
+    --spacing-1700: 8.5rem;
+}
+
 html {
     box-sizing: border-box;
 }
