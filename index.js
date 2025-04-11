@@ -10,6 +10,11 @@ function handleSubmit(e) {
 
     const formData = new FormData(e.target);
     const { rating } = Object.fromEntries(formData);
+    if (!rating) {
+        alert('Please, choose a rating');
+        return;
+    }
+
     renderThanks(rating);
 }
 
