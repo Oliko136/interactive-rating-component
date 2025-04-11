@@ -29,17 +29,30 @@
           All feedback is appreciated to help us improve our offering!
         </p>
         <form class="form" id="form-js">
-          <label for="1">1</label>
-          <input type="radio" name="rating" id="1" value="1">
-          <label for="2">2</label>
-          <input type="radio" name="rating" id="2" value="2">
-          <label for="2">3</label>
-          <input type="radio" name="rating" id="3" value="3">
-          <label for="2">4</label>
-          <input type="radio" name="rating" id="4" value="4">
-          <label for="2">5</label>
-          <input type="radio" name="rating" id="5" value="5">
-          <button type="submit" class="button">Submit</button>
+          <fieldset class="form_fieldset">
+            <div class="form_field">
+              <input type="radio" name="rating" value="1" id="1" class="form_input">
+              <label class="form_label" for="1">1</label>
+            </div>
+            <div class="form_field">
+              <input type="radio" name="rating" value="2" id="2" class="form_input">
+              <label class="form_label" for="2">2</label>
+            </div>
+            <div class="form_field">
+              <input type="radio" name="rating" value="3" id="3" class="form_input">
+              <label class="form_label" for="3">3</label>
+            </div>
+            <div class="form_field">
+              <input type="radio" name="rating" value="4" id="5" class="form_input">
+              <label class="form_label" for="4">4</label> 
+            </div>
+            <div class="form_field">
+              <input type="radio" name="rating" value="5" id="6" class="form_input">
+              <label class="form_label" for="5">5</label>
+            </div>
+          </fieldset>
+      
+          <button type="submit" class="form_button">Submit</button>
         </form>
       </div>
     </article>
