@@ -17,37 +17,45 @@
   <main>
     <!-- Rating state start -->
     <article class="card">
-      <img src="./images/icon-star.svg" alt="Star icon" class="icon">
-      <h1 class="title">How did we do?</h1>
-      <p class="description">
-        Please let us know how we did with your support request. 
-        All feedback is appreciated to help us improve our offering!
-      </p>
-      <form class="form">
-        <label for="1">1</label>
-        <input type="radio" name="rating" id="1">
-        <label for="2">2</label>
-        <input type="radio" name="rating" id="2">
-        <label for="2">3</label>
-        <input type="radio" name="rating" id="3">
-        <label for="2">4</label>
-        <input type="radio" name="rating" id="4">
-        <label for="2">5</label>
-        <input type="radio" name="rating" id="5">
-        <button type="submit" class="button">Submit</button>
-      </form>
+      <div class="card_img">
+        <img src="./images/icon-star.svg" alt="Star icon" class="icon">
+      </div>
+
+      <div class="card_content">
+        <h1 class="title">How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. 
+          All feedback is appreciated to help us improve our offering!
+        </p>
+        <form class="form">
+          <label for="1">1</label>
+          <input type="radio" name="rating" id="1">
+          <label for="2">2</label>
+          <input type="radio" name="rating" id="2">
+          <label for="2">3</label>
+          <input type="radio" name="rating" id="3">
+          <label for="2">4</label>
+          <input type="radio" name="rating" id="4">
+          <label for="2">5</label>
+          <input type="radio" name="rating" id="5">
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </div>
     </article>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <article>
-      <img src="./images/illustration-thank-you.svg" alt="An illustration of a phone with articles and popups">
-      <p>You selected <!-- Add rating here --> out of 5</p>
-      <h2>Thank you!</h2>
-      <p>
-        We appreciate you taking the time to give a rating. 
-        If you ever need more support, don’t hesitate to get in touch!
-      </p>
+    <article class="card card--thanks">
+      <img src="./images/illustration-thank-you.svg" alt="An illustration of a phone with articles and popups" class="card_img--thanks">
+      <p class="message">You selected <span></span> out of 5</p>
+
+      <div class="card_content">
+        <h2 class="title">Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. 
+          If you ever need more support, don’t hesitate to get in touch!
+        </p>
+      </div>
     </article>
   <!-- Thank you state end -->
   </main>

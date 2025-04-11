@@ -5,7 +5,7 @@
     --grey-900: #262E38;
     --grey-500: #969FAD;
     --orange: #FC7614;
-    --gradient: linear-gradient(90deg, #232A34 0%, #181E27 100%);
+    --gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
     --font-family: 'Overpass', sans-serif;
     --font-weight-bold: 700;
     --font-weight-semibold: 600;

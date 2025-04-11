@@ -1,1 +1,101 @@
 @import './basic.css';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    width: 327px;
+    margin: 153px auto;
+    padding: 1.78rem 1.5rem;
+    border-radius: 15px;
+    background: var(--gradient);
+}
+
+.card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--grey-900);
+}
+
+.icon {
+    width: 14px;
+    height: 13px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
+
+.title {
+    font-size: var(--font-size-title-mobile);
+    line-height: var(--line-height-title-mobile);
+    font-weight: var(--font-weight-bold);
+    color: var(--white);
+}
+
+.card--thanks {
+    gap: var(--spacing-300);
+    padding: var(--spacing-400) var(--spacing-300);
+    text-align: center;
+}
+
+.card_img--thanks {
+    width: 144px;
+    height: 96px;
+    margin: auto;
+}
+
+.message {
+    width: 168px;
+    margin: auto;
+    padding: 0.38rem var(--spacing-200);
+    border-radius: 22.5px;
+    color: var(--orange);
+    background-color: var(--grey-900);
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        gap: var(--spacing-400);
+        width: 412px;
+        padding: 2.16rem 1.91rem;
+        margin: 192px auto;
+        border-radius: 30px;
+    }
+
+    .card_img {
+        width: 48px;
+        height: 48px;
+        border-radius: 28px;
+    }
+
+    .icon {
+        width: 17px;
+        height: 16px;
+    }
+
+    .title {
+        font-size: var(--font-size-title-desktop);
+        line-height: var(--line-height-title-desktop);
+    }
+
+    .card--thanks {
+        gap: var(--spacing-400);
+        padding: var(--spacing-500) var(--spacing-400);
+    }
+
+    .card_img--thanks {
+        width: 162px;
+        height: 108px;
+    }
+
+    .message {
+        width: 193px;
+    }
+}
