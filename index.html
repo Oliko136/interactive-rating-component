@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./index.js"></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
@@ -16,7 +17,7 @@
 
   <main>
     <!-- Rating state start -->
-    <article class="card">
+    <article class="card" id="card-js">
       <div class="card_img">
         <img src="./images/icon-star.svg" alt="Star icon" class="icon">
       </div>
@@ -27,17 +28,17 @@
           Please let us know how we did with your support request. 
           All feedback is appreciated to help us improve our offering!
         </p>
-        <form class="form">
+        <form class="form" id="form-js">
           <label for="1">1</label>
-          <input type="radio" name="rating" id="1">
+          <input type="radio" name="rating" id="1" value="1">
           <label for="2">2</label>
-          <input type="radio" name="rating" id="2">
+          <input type="radio" name="rating" id="2" value="2">
           <label for="2">3</label>
-          <input type="radio" name="rating" id="3">
+          <input type="radio" name="rating" id="3" value="3">
           <label for="2">4</label>
-          <input type="radio" name="rating" id="4">
+          <input type="radio" name="rating" id="4" value="4">
           <label for="2">5</label>
-          <input type="radio" name="rating" id="5">
+          <input type="radio" name="rating" id="5" value="5">
           <button type="submit" class="button">Submit</button>
         </form>
       </div>
@@ -45,9 +46,9 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <article class="card card--thanks">
+    <article class="card card--thanks is-hidden" id="thanks-js">
       <img src="./images/illustration-thank-you.svg" alt="An illustration of a phone with articles and popups" class="card_img--thanks">
-      <p class="message">You selected <span></span> out of 5</p>
+      <p class="message">You selected <span id="rating-js"></span> out of 5</p>
 
       <div class="card_content">
         <h2 class="title">Thank you!</h2>

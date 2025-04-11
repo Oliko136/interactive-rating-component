@@ -1,5 +1,7 @@
 @import './basic.css';
 
+
+
 .card {
     display: flex;
     flex-direction: column;
@@ -58,6 +60,10 @@
     border-radius: 22.5px;
     color: var(--orange);
     background-color: var(--grey-900);
+}
+
+.is-hidden {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
