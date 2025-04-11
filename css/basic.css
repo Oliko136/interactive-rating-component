@@ -54,3 +54,18 @@ img {
 button {
     cursor: pointer;
 }
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-text-mobile);
+    line-height: var(--line-height-text-mobile);
+    color: var(--grey-500);
+    background-color: var(--grey-950);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: var(--font-size-text-desktop);
+        line-height: var(--line-height-text-desktop);
+    }
+}
