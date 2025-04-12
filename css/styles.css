@@ -60,10 +60,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
+
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-rating-mobile);
     line-height: var(--line-height-interactive-mobile);
     letter-spacing: var(--letter-spacing-interactive-mobile);
+
+    transition: color 250ms ease-in;
 }
 
 .form_input {
@@ -80,6 +83,8 @@
     
     background-color: var(--grey-900);
     cursor: pointer;
+
+    transition: background-color 250ms ease-in;
 }
 
 .form_input:checked {
@@ -93,6 +98,33 @@
 .form_input:checked + .form_label,
 .form_input:hover + .form_label {
     color: var(--grey-900);
+}
+
+.form_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 45px;
+    padding: var(--spacing-200) var(--spacing-1300);
+    border-color: transparent;
+    border-radius: 22.5px;
+
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-interactive-mobile);
+    letter-spacing: var(--letter-spacing-interactive-mobile);
+    text-transform: uppercase;
+
+    background-color: var(--orange);
+
+    transition: background-color 250ms ease-in;
+}
+
+.form_button:hover,
+.form_button:focus,
+.form_button:active {
+    background-color: var(--white);
 }
 
 .card--thanks {
@@ -164,6 +196,12 @@
         height: 51px;
         padding: var(--spacing-200) var(--spacing-300);
         border-radius: 25.5px;
+    }
+
+    .form_button { 
+        padding: 0.375rem var(--spacing-1700);
+        line-height: var(--line-height-interactive-desktop);
+        letter-spacing: var(--letter-spacing-button-desktop);
     }
 
     .card--thanks {
