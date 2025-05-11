@@ -1,7 +1,7 @@
 const form = document.getElementById('form-js');
 const cardEl = document.getElementById('card-js');
 const thanksEl = document.getElementById('thanks-js');
-const ratingEl = document.getElementById('rating-js');
+const thanksTmpl = document.getElementById('thanks-template');
 
 form.addEventListener('submit', handleSubmit);
 
@@ -19,10 +19,16 @@ function handleSubmit(e) {
 }
 
 function renderThanks(rating) {
+    const clone = thanksTmpl.content.cloneNode(true);
+    clone.querySelector('.message').textContent = `You selected ${rating} out of 5!`;
+    clone.querySelector('.title').textContent = 'Thank you!';
+    clone.querySelector('.description').textContent = "We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!";
+
     cardEl.classList.add('is-hidden');
+    cardEl.innerHTML = '';
     thanksEl.classList.remove('is-hidden');
 
-    ratingEl.textContent = rating;
+    thanksEl.appendChild(clone);
+    
     form.reset();
 }
-
